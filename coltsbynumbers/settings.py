@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'coltsbynumbers.wsgi.application'
 #        'ENGINE': 'django.db.backends.mysql',
 #        'NAME': 'ecommerce',
 #        'USER': 'root',
-#        'PASSWORD': 'oraBQ8@ms24',
+#        'PASSWORD': 'oraXXXXXXX',
 #        'HOST': '',
 #        'PORT': '',
 #        'OPTIONS': {
