@@ -9,4 +9,4 @@ The images will be copied and moved to the media folder of the Angular Material 
 Finally the Angular Material colts-by-numbers will be rebuilt and tested and deployed to heroku cloud. 
 All of the upcoming deployment to github will be via a newly built CI/CD pipeline driven by a fully
 automated process in Python and it looks like including the new 2nd level token authentication that
-our pals here at github have decided to enfource over the summer of 2021. 
+our pals here at github have decided to enforce over the summer of 2021. 
