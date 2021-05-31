@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome to Colts By Numbers</h1>
+    <p>The Colts season stats factory is in operation!</p>
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ pRivers_image_url }}"
+                 style="width: 350px; height: 300px;" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">The 2020 Colts New Look</h5>
+                    <p class="card-text">Let The Rivers Flow</p>
+                    <a href="/factory" class="btn btn-primary">Factory Entrance</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col">
+            <h1>Colts Numbers for 2019</h1>
+            <p>For 2019 we have this very useful package called nflgame-redux.<br/>
+            This will help or we can just cut and paste numbers. <br/>These numbers
+            will go into our initial plotted graphs. </p>
+            <h5>Colts Game 2 Running Backs</h5>
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <th scope="col">Player</th>
+                    <th scope="col">Att</th>
+                    <th scope="col">Yds</th>
+                    <th scope="col">Tds</th>
+                </thead>
+                <tbody>
+                    {% for item in nfl_data %}
+                        <tr>
+                            <td>{{item}}</td>
+                            <td>{{item.rushing_att}}</td>
+                            <td>{{item.rushing_yds}}</td>
+                            <td>{{item.rushing_tds}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+         <p>Check out the <a href="/team/offense" class="btn btn-primary">2019 team offense </a> statistical graphs </p>
+         <p>Check out the <a href="/team/defense" class="btn btn-primary">2019 team defense </a> statistical graphs </p>
+         <p>Check out the <a href="/player/offense" class="btn btn-primary">2019 player offense </a> statistical graphs </p>
+         <p>Check out the <a href="/player/defense" class="btn btn-primary">2019 player defense </a> statistical graphs </p>
+         <p>Check out the <a href="/team/offense_2020" class="btn btn-primary">2020 team offense </a> statistical graphs </p>
+         <p>Check out the <a href="/team/defense_2020" class="btn btn-primary">2020 team defense </a> statistical graphs </p>
+         <p>Check out the <a href="/player/offense_2020" class="btn btn-primary">2020 player offense </a> statistical graphs </p>
+         <p>Check out the <a href="/player/defense_2020" class="btn btn-primary">2020 player defense </a> statistical graphs </p>
+
+        </div>
+    </div>
+{% endblock %}
