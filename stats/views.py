@@ -28,8 +28,8 @@ matplotlib.use('Agg')
 
 
 def index(request):
-    img_name = '/media/pRivers.jpg'
-    return render(request, 'index.html', {'pRivers_image_url': img_name})
+    img_name = '/media/cwentz.jpeg'
+    return render(request, 'index.html', {'cWentz_image_url': img_name})
 
 
 def do_graph():
